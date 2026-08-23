@@ -1,14 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "Abhishek Jha",
-  "main": "math.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
   "name": "ejsdir",
   "version": "1.0.0",
   "description": "",
@@ -23,6 +13,5 @@
   "dependencies": {
     "ejs": "^6.0.1",
     "express": "^5.2.1"
->>>>>>> f163b6b (Embeded javascript templates)
   }
 }

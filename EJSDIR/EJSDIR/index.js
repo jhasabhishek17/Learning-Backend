@@ -7,8 +7,7 @@ const path = require("path");
 
 const port = 8080;
 
-app.use(express.static(path.join(__dirname,"/public/js"))); // here express.static by default it is available to all the files in public file
-app.use(express.static(path.join(__dirname,"/public/css")));
+
 //app.set("views", "./views"); & view engine is set to ejs by default, so we don't need to set it explicitly unless we want to change the views directory.
 // (view engine expect) in views folder we can store all the templates and we can use them in our routes.
 app.set("view engine", "ejs");
