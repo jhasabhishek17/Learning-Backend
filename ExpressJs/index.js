@@ -61,6 +61,8 @@ let port = 3000;
 //  });
 
 
+
+// req.query is an object that contains the query parameters of the request. It is used to access the values of the query parameters in the URL. In this case, it is used to get the value of the "q" query parameter and send a response that includes that value.
 app.get("/search",(req,res) =>{
      let{q} = req.query;
       res.send(`searching for ${q}`);
