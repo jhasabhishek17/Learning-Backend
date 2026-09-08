@@ -32,7 +32,6 @@ app.get("/posts", (req,res) => {
     res.render("index.ejs",{posts});
 })
 
-
 app.listen(port, () => {
     console.log("listening to port : 8080");
 })
