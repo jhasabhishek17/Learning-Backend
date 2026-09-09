@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended:true})); // this line must be written to ge
 app.set("view engine", "ejs"); // this line must be written to set the view engine to ejs
 app.set("views", path.join(__dirname, "views"));// this line must be written to set the views directory to the views folder in the root directory
 
-app.set(express.static(path.join(__dirname,"public")));// this line must be written to set the static files directory to the public folder in the root directory
+app.use(express.static(path.join(__dirname,"public")));// this line must be written to set the static files directory to the public folder in the root directory
 
 let posts = [
     {
