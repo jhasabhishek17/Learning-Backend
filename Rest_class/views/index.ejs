@@ -10,12 +10,25 @@
 <body>
     <h1>Quora Posts</h1>
     <% for(post of posts){  %>
-        <div class="post"></div>
+        <div class="post">
             <h3 class="user">@<%= post.username %></h3>
             <h4 class="content"><%=post.content %></h4>
+            <br>
+            <a href="http://localhost:8080/posts/<%=post.id%>">See in detail</a>
+            <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit Post</a>
+            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+            <button>Delete Post</button></form>
+            <br>
+            
+            
         </div>
     
 <%}%>
+
+<br>
+<br>
+<!-- Below anchor tag is to redirect to the new post page -->
+<a href="http://localhost:8080/posts/new">Create New Post</a>
 </body>
 </html>
 
