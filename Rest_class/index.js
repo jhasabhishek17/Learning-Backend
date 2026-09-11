@@ -30,7 +30,20 @@ let posts = [
 
 app.get("/posts", (req,res) => {
     res.render("index.ejs",{posts});
-})
+});
+
+//Below code is for the new post form
+app.get("/posts/new", ( req, res) => {
+    res.render("new.ejs");
+});
+
+//Below code is for the post request to add a new post
+app.post("/posts",(req,res) => {
+    let {username,content} = req.body;
+    posts.push({username,content});
+    res.send("post request working");
+});
+
 
 app.listen(port, () => {
     console.log("listening to port : 8080");
