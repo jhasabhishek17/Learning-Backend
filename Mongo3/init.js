@@ -14,9 +14,6 @@ async function main() {
 }
 
 
-
-
-
 let allChats = [
 {
     from: "neha",
