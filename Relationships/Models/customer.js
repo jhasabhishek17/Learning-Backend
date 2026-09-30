@@ -52,7 +52,6 @@ addCustomer();
 
 
 //const Order = mongoose.model("Order",orderSchema);
-
 // Below code is to add the orders and customer  and above that we define our order schema
 
 //order schema
@@ -65,7 +64,7 @@ addCustomer();
 //     console.log(res);
 // };
 
-// addOrders();
 
+// addOrders();
 
 // do it by yourself => pre and post middleware
